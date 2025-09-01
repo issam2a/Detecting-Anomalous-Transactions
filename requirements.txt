@@ -2,6 +2,10 @@ streamlit
 scikit-learn
 pandas
 joblib
+<<<<<<< HEAD
 imbalanced-learn
+=======
+imbalnced-learn
+>>>>>>> a31a556088ea16506a0d8dd7ef348e52cffceaf6
 matplotlib
 numpy
