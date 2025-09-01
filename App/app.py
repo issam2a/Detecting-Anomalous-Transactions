@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import os 
 
 def feature_engineering(X):
     X = X.copy()
@@ -12,9 +12,11 @@ def feature_engineering(X):
     X['is_suspicious_type'] = X['type'].isin(['TRANSFER', 'CASH_OUT']).astype(int)
     return X
 
+# Get the folder where app.py is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load trained pipeline
-pipeline = joblib.load("fraud_detection_model.pkl")
+pipeline = joblib.load(os.path.join(BASE_DIR, "fraud_detection_model.pkl"))
 
 st.set_page_config(page_title="Fraud Detection App", page_icon="💳", layout="centered")
 
