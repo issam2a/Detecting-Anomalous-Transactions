@@ -74,7 +74,8 @@ The dataset contains detailed transaction-level data:
 Overall accuracy: basically 100% (but we don’t care much about accuracy here because of imbalance).
 
 
-
+## 🖥️ Live Demo
+👉 [Click here to try the app](https://detecting-anomalous-transactions-mvajgxib4rsubivw79sovd.streamlit.app/)  
 
 ## 🛠️ Tools & Libraries
 
